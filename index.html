@@ -55,24 +55,11 @@
         }    
 </style>
 <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script>
-        // Function to initialize the Google Translate Element
-        function googleTranslateElementInit() {
-            // Set the default language for the entire page to English and include only the specified language
-            new google.translate.TranslateElement(
-                {
-                    pageLanguage: 'tel',
-                    //includedLanguages: 'es', // Change 'es' to the language code you want to translate the specific part to
-                },
-                'google_translate_element'
-            );
-
-            // Create an InlineEditor for the specific section with the ID 'translateThisSection'
-            var translateThisSection = new google.translate.TranslateElement.InlineEditor(
-                'translateThisSection'
-            );
-        }
-    </script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'tel', layout: google.translate.TranslateElement.InlineLayout }, 'google_translate_element');
+  }
+</script>
  </head>
  <body>
   <div id="google_translate_element_container">
@@ -556,21 +543,7 @@ jowar
 		 </div>	 
 
   </DIV>
- 
-
-
-  <script>
-    googleTranslateElementInit();
-  </script>
-
-
-
-
-
-
-
-
-
+  
 
 </body>
 </html>
